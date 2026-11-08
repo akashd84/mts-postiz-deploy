@@ -255,6 +255,7 @@ services:
     networks:
       - temporal-network
     stdin_open: true
+    exclude_from_hc: true
     depends_on:
       temporal:
         condition: service_healthy
