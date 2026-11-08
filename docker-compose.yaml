@@ -242,7 +242,7 @@ services:
       retries: 10
       start_period: 30s
     volumes:
-      - ./dynamicconfig:/etc/temporal/config/dynamicconfig
+      - ./dynamicconfig:/etc/temporal/config/dynamicconfig:ro
     labels:
       kompose.volume.type: configMap
 
